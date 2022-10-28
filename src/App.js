@@ -1,11 +1,11 @@
 import "./app.css";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { useEffect, useState } from "react";
-import { Room, Star, StarBorder } from "@material-ui/icons";
+import { Room, Star } from "@material-ui/icons";
 import axios from "axios";
 import { format } from "timeago.js";
-import Register from "./components/Register";
-import Login from "./components/Login";
+import Register from "./Components/Register";
+import Login from "./Components/Login";
 
 function App() {
   const myStorage = window.localStorage;
@@ -84,7 +84,7 @@ function App() {
         width="100%"
         height="100%"
         transitionDuration="200"
-        mapStyle="mapbox://styles/safak/cknndpyfq268f17p53nmpwira"
+        mapStyle="mapbox://styles/Bharat/token"
         onViewportChange={(viewport) => setViewport(viewport)}
         onDblClick={currentUsername && handleAddClick}
       >
